@@ -1,0 +1,222 @@
+/* Custom CSS for styling the sticky navbar and other page elements */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Added gap between the logos */
+}
+
+.navbar-button {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.navbar .phone-icon {
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+/* Custom Background Color for Navbar */
+.navbar-custom {
+    background-color: black !important; /* Set navbar background to black */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white !important; /* Set navbar links to white */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white !important; /* Set navbar toggler icon color */
+}
+
+/* Hover Effect for Navbar Links */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: yellow !important; /* Change text color to yellow */
+    font-weight: bold !important; /* Make the text bold */
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    width: 100%;
+    height: 525px; /* Set the height of the carousel images */
+}
+
+/* Styling for "A Legacy of Educational Excellence" text */
+.legacy-text {
+    text-align: center;
+    color: darkblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Slightly move down initially */
+    transition: opacity 1s ease, transform 1s ease; /* Animation for fade-in and slide-up */
+}
+
+/* Class to trigger the animation */
+.legacy-text.visible {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Move to normal position */
+}
+
+/* Styling for the 4 sections with numbers */
+.stat-section {
+    text-align: center;
+    margin: 50px 0;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(30px); /* Initially moved down */
+    transition: opacity 1s ease, transform 1s ease; /* Fade-in and slide-up animation */
+}
+
+.stat-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.stat-text {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Optionally, you can add an image in each section */
+.stat-image {
+    width: 50px; /* Adjust the size of the image */
+    margin-bottom: 20px;
+}
+
+/* Class to trigger the animation */
+.stat-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for the new image section */
+.image-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.image-section img {
+    width: 100%; /* Set the image to be full width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for the "Achievers" section */
+.achievers-heading {
+    text-align: center;
+    color: blue; /* Heading color */
+    font-size: 32px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.achievers-text {
+    text-align: center;
+    color: grey; /* Text color */
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Styling for the 4 sections with text and numbers in squares */
+.stat-square {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.stat-square .stat-number {
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+
+.stat-square .stat-text {
+    font-size: 16px;
+    color: black;
+}
+
+.think-beyond-heading {
+    font-size: 32px;
+    color: blue; /* Dark blue color from the blue family */
+    font-weight: bold;
+}
+
+.awards-section h2 {
+    color: #0056b3; /* Blue color */
+    font-size: 36px; /* Larger text */
+    font-weight: bold; /* Bold font */
+}
+
+.ranked-section {
+    padding: 20px 0;
+    text-align: center; /* Center align text and logos */
+    display: flex; /* Use flexbox to display items in a row */
+    justify-content: center; /* Center items horizontally */
+    gap: 100px; /* Space between the two items */
+}
+
+/* Styling for each ranked item (text and logo) */
+.ranked-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items (text and logo) in the center */
+}
+
+/* Styling for the text inside the ranked section */
+.ranked-text {
+    font-size: 18px;
+    color: grey;
+    margin-bottom: 10px; /* Space between text and logo */
+    font-weight: bold;
+}
+
+.footer {
+    background-color: yellow;
+    padding: 40px 0;
+}
+
+.footer .footer-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .footer-section h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.footer .footer-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .footer .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .footer-section {
+        margin-bottom: 0;
+    }
+}

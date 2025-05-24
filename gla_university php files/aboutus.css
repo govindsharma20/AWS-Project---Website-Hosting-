@@ -1,0 +1,99 @@
+/* Custom CSS for styling the sticky navbar and other page elements */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust the size of the logo */
+    margin-right: 20px; /* Added gap between the logos */
+}
+
+.navbar-button {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.navbar .phone-icon {
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+/* Custom Background Color for Navbar */
+.navbar-custom {
+    background-color: black !important; /* Set navbar background to black */
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: white !important; /* Set navbar links to white */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: white !important; /* Set navbar toggler icon color */
+}
+
+/* Hover Effect for Navbar Links */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: yellow !important; /* Change text color to yellow */
+    font-weight: bold !important; /* Make the text bold */
+}
+
+
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.section-content {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+.section {
+    background-color: #2e8b57; /* Green background */
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: yellow;
+    padding: 40px 0;
+}
+
+.footer .footer-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .footer-section h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+.footer .footer-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+@media (min-width: 768px) {
+    .footer .row {
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer .footer-section {
+        margin-bottom: 0;
+    }
+}
